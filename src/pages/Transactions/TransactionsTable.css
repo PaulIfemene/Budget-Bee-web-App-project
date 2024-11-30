@@ -1,0 +1,50 @@
+.transactions {
+  /* width: 97%; */
+  padding: 0rem 2rem;
+  margin-top: 2rem;
+}
+
+.transaction-search-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.table-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 90%;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+
+.input-flex input {
+  border: 0;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.input-flex input:focus {
+  outline: none;
+}
+
+.csv-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 320px;
+}

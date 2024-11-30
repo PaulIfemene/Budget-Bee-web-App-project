@@ -1,0 +1,25 @@
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 90%;
+  margin: 2rem auto;
+}
+.dashboard-card {
+  box-shadow: var(--shadow);
+  min-width: 350px;
+  padding: 0.2rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  flex: 1;
+}
+.dashboard-card p {
+  margin: 0;
+}
+.ant-card-head-title {
+  margin: 0rem;
+  font-weight: 500;
+}

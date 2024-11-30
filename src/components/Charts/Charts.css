@@ -1,0 +1,15 @@
+.charts-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+}
+
+@media only screen and (max-width: 1281px) {
+  .charts-wrapper {
+    flex-direction: column;
+  }
+}

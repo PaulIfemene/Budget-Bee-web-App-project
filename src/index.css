@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --theme: rgb(106, 106, 192);
+  --black: #000;
+  --white: #fff;
+  --shadow: 0px 0px 30px 8px rgba(159, 158, 161, 0.75);
+}
+
+body {
+  margin: 0;
+  font-synthesis: none;
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.custom-input {
+  border-width: 0;
+  border-bottom-width: 1px;
+  width: 100%;
+  font-size: 1rem;
+  opacity: 0.8;
+  padding: 0.2rem 0rem;
+  border: 1px solid rgb(61, 60, 60);
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker
+  .ant-picker-input
+  > input {
+  display: none;
+}
+
+.custom-date-input:focus {
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input:focus {
+  outline: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.custom-input::placeholder {
+  color: gray;
+}
+.select-input {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  margin-right: 10px;
+  box-shadow: 0px 0px 30px 8px rgba(227, 227, 227, 0.75);
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+.select-input > div {
+  border: 0 solid !important;
+}
+
+.select-input:focus {
+  outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.passwordIcon-wrapper {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 37px;
+  color: #383634;
+}
+
+.ant-modal-content {
+  padding-bottom: 2px !important;
+  width: 420px;
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-form-item {
+  margin-bottom: 14px;
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-select-outlined:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  border: 1px solid rgb(61, 60, 60);
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker .ant-picker-input {
+  padding: 0.1rem 0.1rem;
+}
+
+.custom-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-outlined {
+  background: unset;
+  border-width: 0px;
+  border-style: unset;
+  border-color: unset;
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker .ant-picker-suffix {
+  color: black !important;
+  margin-inline-start: 0px;
+}
+
+.date-time-input {
+  font-size: 16px;
+}
+
+.anticon svg {
+  display: inline-block;
+  width: 21px;
+  height: 22px;
+}
+
+@media only screen and (max-width: 916px) {
+  .table-radio h2 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-radio-group {
+    width: 200px;
+  }
+  .input-radio-span {
+    font-size: 9px;
+  }
+
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-radio-button-wrapper {
+    padding-inline: 5px;
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-radio-group {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-row {
+    margin: 1rem auto;
+  }
+  .dashboard-card {
+    margin: 10px;
+  }
+  .csv-btn {
+    width: 210px;
+  }
+
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-cell,
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-thead
+    > tr
+    > th {
+    padding: 5px 5px;
+  }
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-tbody
+    > tr
+    > td {
+    padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 418px) {
+  .csv-btn {
+    gap: 0rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .dashboard-card {
+    min-width: 250px;
+  }
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-cell,
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-thead
+    > tr
+    > th {
+    padding: 3px 3px;
+  }
+  :where(.css-dev-only-do-not-override-d2lrxs).ant-table-wrapper
+    .ant-table-tbody
+    > tr
+    > td {
+    padding: 3px 3px;
+  }
+}
